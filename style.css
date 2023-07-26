@@ -11,60 +11,94 @@ body {
 
     min-height: 100vh;
     background-color: rgb(140, 207, 187);
-}
+}    
 
 header {
-    background-color: rgb(112, 208, 240);
+    color: white !important;
+    font-family: Bookman;
+    font-size: 24pt;
     height: 88px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-image: url(./assets/headerbackground1.jpg);
+    background-size:cover;
+
 }
 
 nav ul {
+    font-size: 12pt;
     display: flex;
     list-style: none;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-header img {
-    height: 100%;
+nav a{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 main {
     flex-grow: 1;
     display: grid;
     grid-template-columns: 150px auto;
+    grid-row-gap: 20px;
+    /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
     main {
 
         grid-template-columns: 300px auto;
     }
-    
+
 }
 
-
-.applications-content {}
 
 @media screen and (min-width: 768px) {
     .applications-content {
         border: 2px solid red;
         display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .applications-content {
+        border: 2px solid red;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+}
+
+.project1 {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.project1 img {
     
+    width: 100%;
+    border: 1px solid red;
+
+}
+
+/*spans the width of both columns when it wraps*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .coming-soon {
+       grid-column: span 2;
+    }
 }
 
 
 
 footer {
     background-color: rgb(161, 99, 23);
-}
-
-.a-project {
-    border: 2px solid black;
 }
