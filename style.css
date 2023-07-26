@@ -25,6 +25,12 @@ header {
     background-size:cover;
 
 }
+
+header img {
+    height: auto;
+    width: 100px; 
+}
+
 /*When the screen is below 768px*/
 @media screen and (max-width: 768px){
     h1 {
@@ -43,6 +49,8 @@ nav ul {
     list-style: none;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a{
@@ -56,7 +64,6 @@ main {
     grid-template-columns: 150px auto;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     background-color: white;
     margin: 20px 40px 20px;
 }
@@ -71,22 +78,39 @@ main {
     padding-right: 20px;
     font-weight: bold;
 
-
 }
 
 .about-me-content p {
     text-align: justify;
+    padding: 5px;
+}
+
+.applications-content {
+    gap: 20px;
+    text-align: center;
+}
+
+.project1 {
+    height: 600px;
+}
+
+.project1 img {
+    height: 100%
+}
+
+.applications-content img {
+    width:95%;
+    height: 300px;
+}
+
+.project1, .project2, .project3 {
+    border: solid 10px lightblue;
     padding: 10px;
 }
-.applications-content img {
-    
-    width:100%;
-    height: 300px;
 
-}
-
-.applications-content h2{
-    text-align: center;
+.project1:hover, .project2:hover, .project3:hover{
+    box-shadow: 0 0 30px black inset;
+    filter: brightness(140%);
 }
 
 /*When the screen goes over 768px*/
@@ -97,7 +121,6 @@ main {
         grid-template-columns: 300px auto;
     }
     .applications-content {
-        border: 2px solid red;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -108,7 +131,6 @@ main {
 /*when the screen goes over 992px*/
 @media screen and (min-width: 992px) {
     .applications-content {
-        border: 2px solid red;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
