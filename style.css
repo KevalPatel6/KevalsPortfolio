@@ -25,7 +25,7 @@ header {
     background-size:cover;
 
 }
-
+/*When the screen is below 768px*/
 @media screen and (max-width: 768px){
     h1 {
         font-size: 24pt;
@@ -58,17 +58,9 @@ main {
     grid-row-gap: 40px;
     /* grid-template-rows: 1fr 1fr 1fr; */
     background-color: white;
-    margin-top: 20px;
+    margin: 20px 40px 20px;
 }
 
-@media screen and (min-width: 768px) {
-
-    main {
-
-        grid-template-columns: 300px auto;
-    }
-
-}
 
 .Section-Title-Headers {
     font-family: Bookman;
@@ -79,27 +71,13 @@ main {
     padding-right: 20px;
     font-weight: bold;
 
-}
-
-@media screen and (min-width: 768px) {
-    .applications-content {
-        border: 2px solid red;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
 }
 
-@media screen and (min-width: 992px) {
-    .applications-content {
-        border: 2px solid red;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
+.about-me-content p {
+    text-align: justify;
+    padding: 10px;
 }
-
-
 .applications-content img {
     
     width:100%;
@@ -111,7 +89,36 @@ main {
     text-align: center;
 }
 
+/*When the screen goes over 768px*/
+@media screen and (min-width: 768px) {
 
+    main {
+
+        grid-template-columns: 300px auto;
+    }
+    .applications-content {
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/*when the screen goes over 992px*/
+@media screen and (min-width: 992px) {
+    .applications-content {
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+
+
+/*when the screen is in between 768px and 992px we want the second row to span both columns*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .project3 {
        grid-column: span 2;
