@@ -55,7 +55,7 @@ main {
     display: grid;
     grid-template-columns: 150px auto;
     grid-column-gap: 40px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     /* grid-template-rows: 1fr 1fr 1fr; */
     background-color: white;
     margin-top: 20px;
@@ -91,7 +91,10 @@ main {
 }
 
 @media screen and (min-width: 992px) {
-    
+    .applications-content {
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
@@ -104,11 +107,10 @@ main {
 
 }
 
-.applications-content img:hover{
-
+.applications-content h2{
+    text-align: center;
 }
 
-/*spans the width of both columns when it wraps*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .project3 {
@@ -118,8 +120,6 @@ main {
     .applications-content{
         row-gap: 20px;
         column-gap: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
@@ -127,6 +127,15 @@ main {
 
 img.project1:hover {
         filter: brightness(75%);
+}
+
+.contact-info{
+    display: flex;
+    font-size: 12pt;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    color:brown;
 }
 
 footer {
