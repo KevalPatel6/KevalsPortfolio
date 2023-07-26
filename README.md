@@ -1,8 +1,8 @@
 # KevalsPortfolio
 This is Keval's Portfolio as a prospective Software Developer
 
-Webpage: 
-<link url="https://kevalpatel6.github.io/KevalsPortfolio/">Webpage</link>
+
+Webpage: https://kevalpatel6.github.io/KevalsPortfolio/
 
 Description
 This repository is Kevals Portfolio for Challenge 2. This project was undertaken in order to create a webpage that highlights my work for prospective employers and to demonstrate my understanding of creating a webpage from scratch and using grid within CSS to make the HTML elements easier to style within the page. This solves the problem of whether or not I have any experience with HTML and CSS to create webpages. I learned how to use CSS grid to make the layout that I desired and worked with media screen to change what happens when the window sizes were changed. 
